@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="src/styles/cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+    <div class="box-cadastro">
+        <div class="box-cadastro-esquerda">
+            <div class="header-login">
+                <div>
+                    <h1 id="cadastro">
+                        Cadastro
+                    </h1>
+                </div>
+                <div class="redes-sociais">
+                    <div id="facebook" class="circle">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <form method="post">
+                    <div class="form-input">
+                        <label for="email">EMAIL</label>
+                        <input id="email" placeholder="email@email.com" type="text" name="email">
+                    </div>
+                    <div class="form-input">
+                        <label for="senha">SENHA</label>
+                        <input id="senha" placeholder="Digite a sua senha" type="password" name="senha">
+                    </div>
+                    <button class="cadastrar">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="box-cadastro-direita">
+            <h1>
+                Bem Vindo
+            </h1>
+            <p>
+                Já possui conta?
+            </p>
+            <button class="login">
+                Login
+            </button>
+        </div>
+    </div>
+    <script src="src/scripts/cadastro.js"></script>
+</body>
+</html>
