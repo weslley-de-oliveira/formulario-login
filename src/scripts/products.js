@@ -1,1 +1,1 @@
-console.log("Olá mundo produtos");
+alert('Bem vindo!');

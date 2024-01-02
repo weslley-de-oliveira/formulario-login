@@ -5,8 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="src/styles/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 <body>
+    <div class="box-login">
+        <div class="box-login-esquerda">
+            <div class="header-login">
+                <div>
+                    <h1 id="login">
+                        Login
+                    </h1>
+                </div>
+                <div class="redes-sociais">
+                    <div id="facebook" class="circle pointer">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="circle pointer">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <form method="post">
+                    <div class="form-input">
+                        <label for="email">EMAIL</label>
+                        <input id="email" placeholder="email@email.com" type="text" name="email">
+                        <div class="erro-email alert-danger">
+                            Email inválido!
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="senha">SENHA</label>
+                        <input id="senha" placeholder="Digite a sua senha" type="password" name="senha">
+                        <div class="erro-senha alert-danger">
+                            A senha deve possuir 8 caracteres!
+                        </div>
+                    </div>
+                </form>
+                <button id="btn-logar" class="logar pointer">Logar</button>
+            </div>
+        </div>
+
+        <div class="box-login-direita">
+            <h1>
+                Bem Vindo
+            </h1>
+            <p>
+                Não possui conta?
+            </p>
+            <button id="btn-cadastrar" class="cadastrar pointer">
+                Cadastrar
+            </button>
+        </div>
+    </div>
     <script src="src/scripts/login.js"></script>
 </body>
 </html>

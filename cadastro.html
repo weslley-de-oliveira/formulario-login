@@ -13,17 +13,17 @@
 <body>
     <div class="box-cadastro">
         <div class="box-cadastro-esquerda">
-            <div class="header-login">
+            <div class="header-cadastro">
                 <div>
                     <h1 id="cadastro">
                         Cadastro
                     </h1>
                 </div>
                 <div class="redes-sociais">
-                    <div id="facebook" class="circle">
+                    <div id="facebook" class="circle pointer">
                         <i class="fa-brands fa-facebook-f"></i>
                     </div>
-                    <div class="circle">
+                    <div class="circle pointer">
                         <i class="fa-brands fa-twitter"></i>
                     </div>
                 </div>
@@ -33,13 +33,19 @@
                     <div class="form-input">
                         <label for="email">EMAIL</label>
                         <input id="email" placeholder="email@email.com" type="text" name="email">
+                        <div class="erro-email alert-danger">
+                            Email inválido!
+                        </div>
                     </div>
                     <div class="form-input">
                         <label for="senha">SENHA</label>
                         <input id="senha" placeholder="Digite a sua senha" type="password" name="senha">
+                        <div class="erro-senha alert-danger">
+                            A senha deve possuir 8 caracteres!
+                        </div>
                     </div>
-                    <button class="cadastrar">Cadastrar</button>
                 </form>
+                <button id="btn-cadastrar" class="cadastrar pointer">Cadastrar</button>
             </div>
         </div>
 
@@ -50,7 +56,7 @@
             <p>
                 Já possui conta?
             </p>
-            <button class="login">
+            <button id="btn-login" class="login pointer">
                 Login
             </button>
         </div>

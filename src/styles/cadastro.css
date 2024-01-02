@@ -22,6 +22,15 @@ h1 {
     font-size: 4rem;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
+.alert-danger {
+    color: red;
+    padding: 1rem 3rem;
+}
+
 .box-cadastro {
     height: 50%;
     width: 50%;
@@ -41,7 +50,7 @@ h1 {
     padding: 10rem 6rem;
 }
 
-.header-login {
+.header-cadastro {
     display: flex;
     justify-content: space-between;
     margin-bottom: 6rem;
